@@ -96,3 +96,38 @@ chatbot/
     - Perplexity API
     - OpenAI API
 
+## 🚀 Installation
+
+1. **Clone the repository:**
+   ```
+   git clone https://github.com/meghana-242002/FinGPT.git
+   cd FinGPT
+   ```
+
+2. **Install the required packages:**
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. **Create a .env file in the project directory with your API keys:**
+   ```
+   OPENAI_API_KEY=your_openai_api_key
+   PERPLEXITY_API_KEY=your_perplexity_api_key
+   GOOGLE_APPLICATION_CREDENTIALS=path_to_your_google_cloud_credentials.json
+   ```
+
+4. **Set up Google Cloud Vision API:**
+   - Go to [Google Cloud Console](https://console.cloud.google.com/)
+   - Create a new project or select an existing one
+   - Enable the Cloud Vision API
+   - Create a service account and download the JSON credentials
+   - Save the JSON file in a secure location
+   - Update the GOOGLE_APPLICATION_CREDENTIALS in .env with the path to your JSON file
+
+5. **Run the application:**
+   ```
+   streamlit run main.py
+   ```
+
+
+
